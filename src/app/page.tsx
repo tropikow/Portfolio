@@ -5,6 +5,8 @@ import Section from "@/components/Section";
 import Image from "next/image";
 import About from '@/components/About';
 import ExperienceSection from "@/components/ExperienceSection";
+import ProjectsSection from "@/components/ProjectSection";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -29,21 +31,18 @@ export default function Home() {
         </div>
       </Section>
 
-    <Section id="about">
-      <About />
-    </Section>
+      <Section id="about">
+        <About />
+      </Section>      
 
-      <Section id="experience">
-        <h2 className="text-3xl">Experiencia</h2>        
-      </Section>
+      <ExperienceSection />
 
-      <Section id="project">
+      {/* <Section id="project">
         <h2 className="text-3xl">Proyectos</h2>
-      </Section>
+      </Section> */}
+      <ProjectsSection />
 
-      <Section id="contact">
-        <h2 className="text-3xl">Contacto</h2>
-      </Section>
+      <ContactSection />
     </main>
   );
 }

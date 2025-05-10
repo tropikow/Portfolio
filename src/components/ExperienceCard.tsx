@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { useRef } from "react";
 
 type ExperienceProps = {
   company: string;
@@ -17,12 +18,25 @@ export default function ExperienceCard({
   description,
   tech,
 }: ExperienceProps) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
+
+  // Escala sutil al entrar en foco
+  const scale = useSpring(useTransform(scrollYProgress, [0, 1], [0.9, 1]), {
+    stiffness: 100,
+    damping: 20,
+  });
+
+  // Desplazamiento vertical apilado
+  const y = useSpring(useTransform(scrollYProgress, [0, 1], [100, 0]), {
+    stiffness: 100,
+    damping: 20,
+  });
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50, scale: 0.95 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
+      ref={ref}
+      style={{ scale, y }}
       className="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/10 max-w-xl mx-auto"
     >
       <h3 className="text-xl font-bold">{company}</h3>
