@@ -7,10 +7,13 @@ import About from '@/components/About';
 import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectSection";
 import ContactSection from "@/components/ContactSection";
+import BackgroundWaves from "@/components/BackgroundWaves";
+import WaveBackground from "@/components/WaveBackground";
 
 export default function Home() {
   return (
-    <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
+    <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">      
+      <WaveBackground />
       <Navbar />
 
       <Section id="inicio">
