@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">      
       <WaveBackground />
+      
       <Navbar />
 
       <Section id="inicio">
@@ -39,9 +40,6 @@ export default function Home() {
 
       <ExperienceSection />
 
-      {/* <Section id="project">
-        <h2 className="text-3xl">Proyectos</h2>
-      </Section> */}
       <ProjectsSection />
 
       <ContactSection />
