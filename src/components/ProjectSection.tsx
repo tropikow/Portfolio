@@ -6,8 +6,8 @@ import Section from "./Section";
 const projects = [
   {
     title: "GetLavado App",
-    image: "/projects/getlavado.png",
-    link: "https://getlavado.com",
+    image: "/projects/getlavado.png",    
+    image: "/projects/app.png",
   },
   {
     title: "Dashboard B2B",

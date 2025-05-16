@@ -28,8 +28,10 @@ const experiences = [
 export default function ExperienceSection() {
   return (
     <Section id="experiencia">
-      <div className="flex flex-col gap-10 py-20 px-4">
-        <h2 className="text-4xl font-bold text-center mb-10">Experiencia</h2>
+      <div className="flex flex-col py-12 px-4 sm:gap-8 sm:py-16">
+        <div className="text-center">
+          <h2 className="text-4xl font-bold">Experiencia</h2>
+        </div>
         {experiences.map((exp, index) => (
           <ExperienceCard key={index} {...exp} />
         ))}
