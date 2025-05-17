@@ -5,11 +5,11 @@ import Section from "./Section";
 
 const projects = [
   {
-    title: "GetLavado App",    
+    title: "Station B2B",    
     image: "/projects/app.png",
   },
   {
-    title: "Dashboard B2B",
+    title: "Backoffice B2B",
     image: "/projects/dashboard.png",
   },
   {
