@@ -52,7 +52,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="text-white hover:text-blue-400 transition"
           >
-            <Linkedin size={28} />
+            <Linkedin size={28} className="text-gray-800 dark:text-white"/>
           </a>
           <a
             href="https://github.com/tropikow"
@@ -60,7 +60,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="text-white hover:text-blue-400 transition"
           >
-            <Github size={28} />
+            <Github size={28} className="text-gray-800 dark:text-white" />
           </a>
           <a
             href="https://wa.me/573157569760?text=Hola%20Jovanny,%20vi%20tu%20portafolio"
@@ -68,7 +68,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             className="text-white hover:text-green-400 transition"
           >
-            <MessageCircle size={28} />
+            <MessageCircle size={28} className="text-gray-800 dark:text-white" />
           </a>
         </div>
       </div>

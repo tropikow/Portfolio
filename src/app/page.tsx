@@ -28,7 +28,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold">
             Hola, soy Jovanny Ruiz
           </h1>
-          <p className="mt-4 text-lg text-gray-400">
+          <p className="mt-4 text-lg text-gray-800 dark:text-gray-400">
             Desarrollador frontend con experiencia en backend.
           </p>
         </div>
