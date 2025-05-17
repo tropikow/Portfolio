@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import clsx from 'clsx'
 
-const links = ['Inicio', 'Sobre mí', 'Experiencia', 'Proyectos', 'Contacto']
+const links = ['Inicio', 'Sobre mi', 'Stack', 'Experiencia', 'Proyectos', 'Contacto']
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)

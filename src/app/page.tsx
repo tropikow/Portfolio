@@ -8,6 +8,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectSection";
 import ContactSection from "@/components/ContactSection";
 import WaveBackground from "@/components/WaveBackground";
+import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (
@@ -33,10 +34,10 @@ export default function Home() {
           </p>
         </div>
       </Section>
-
-      <Section id="about">
-        <About />
-      </Section>      
+      
+      <About />      
+      
+      <TechStack />
 
       <ExperienceSection />
 

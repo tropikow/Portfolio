@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="sobre-mi" className="snap-start py-20 px-6 max-w-4xl mx-auto text-center">
+    <section id="sobremi" className="snap-start py-20 px-6 max-w-4xl mx-auto text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">Sobre mí</h2>
       <p className="text-gray-800 dark:text-gray-400 text-lg leading-relaxed">
         Soy un desarrollador frontend con enfoque en la creación de experiencias web modernas, rápidas y elegantes.
