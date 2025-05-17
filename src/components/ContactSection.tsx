@@ -6,7 +6,7 @@ export default function ContactSection() {
     <Section id="contacto">
       <div className="max-w-xl mx-auto py-20 px-6">
         <h2 className="text-4xl font-bold text-center mb-6">Contacto</h2>
-        <p className="text-center text-gray-400 mb-10">
+        <p className="text-center text-gray-800 dark:text-gray-400 mb-10">
           ¿Tienes un proyecto o idea en mente? Escríbeme y lo hablamos.
         </p>
 
