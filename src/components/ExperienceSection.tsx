@@ -23,6 +23,13 @@ const experiences = [
     description: "Portafolios, backoffices, SaaS, webapps, bots de WhatsApp y refactorización de legacy code.",
     tech: ["Astro", "React", "Firebase", "Python"],
   },
+  {
+    company: "Capacitador de personal / Interfaz Móvil POS",
+    role: "Capacitator",
+    period: "jun/2021 - oct/2021",
+    description: "Capacitador de personal y cliente en el uso de una WebApp para una de las mas grandes StartUp de Colombia.",
+    tech: ["Comunicación", "Capacitación"],
+  },
 ];
 
 export default function ExperienceSection() {
