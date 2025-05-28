@@ -14,11 +14,11 @@ const projects = [
   },
   {
     title: "OCR Facturas",
-    image: "/projects/ocr.png",
+    image: "/projects/ocr.svg",
   },
   {
     title: "Bot WhatsApp",
-    image: "/projects/bot.png",
+    image: "/projects/bot.webp",
   },
 ];
 
