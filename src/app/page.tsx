@@ -9,6 +9,7 @@ import ProjectsSection from "@/components/ProjectSection";
 import ContactSection from "@/components/ContactSection";
 import WaveBackground from "@/components/WaveBackground";
 import TechStack from "@/components/TechStack";
+import ThoughtsSection from "@/components/ThoughtsSection";
 
 export default function Home() {
   return (
@@ -42,6 +43,8 @@ export default function Home() {
       <ExperienceSection />
 
       <ProjectsSection />
+
+      <ThoughtsSection />
 
       <ContactSection />
     </main>
