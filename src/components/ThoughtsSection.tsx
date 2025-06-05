@@ -1,10 +1,10 @@
 import Section from "./Section";
-import ThoughtCard from "./ThoughtCard";
-import { getLatestThought } from "@/lib/thoughts";
-import { Thought } from "@/types/thought";
+// import ThoughtCard from "./ThoughtCard";
+// import { getLatestThought } from "@/lib/thoughts";
+// import { Thought } from "@/types/thought";
 
 export default async function ThoughtsSection() {
-  const latestThought = await getLatestThought();
+  // const latestThought = await getLatestThought();
 
   return (
     <Section id="pensamientos">
@@ -15,7 +15,7 @@ export default async function ThoughtsSection() {
         </p>
         
         <div className="max-w-3xl mx-auto">
-          <ThoughtCard {...latestThought} />
+          {/* <ThoughtCard {...latestThought} /> */}
         </div>
       </div>
     </Section>
