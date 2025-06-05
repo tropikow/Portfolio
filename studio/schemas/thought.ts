@@ -1,3 +1,5 @@
+import { Rule } from '@sanity/types'
+
 export default {
   name: 'thought',
   title: 'Thought',
@@ -7,32 +9,32 @@ export default {
       name: 'title',
       title: 'Title',
       type: 'string',
-      validation: Rule => Rule.required()
+      validation: (rule: Rule) => rule.required()
     },
     {
       name: 'excerpt',
       title: 'Excerpt',
       type: 'text',
-      validation: Rule => Rule.required()
+      validation: (rule: Rule) => rule.required()
     },
     {
       name: 'content',
       title: 'Content',
       type: 'text',
-      validation: Rule => Rule.required()
+      validation: (rule: Rule) => rule.required()
     },
     {
       name: 'date',
       title: 'Date',
       type: 'date',
-      validation: Rule => Rule.required()
+      validation: (rule: Rule) => rule.required()
     },
     {
       name: 'tags',
       title: 'Tags',
       type: 'array',
       of: [{ type: 'string' }],
-      validation: Rule => Rule.required()
+      validation: (rule: Rule) => rule.required()
     },
     {
       name: 'category',
@@ -46,7 +48,7 @@ export default {
           { title: 'Opinion', value: 'opinion' }
         ]
       },
-      validation: Rule => Rule.required()
+      validation: (rule: Rule) => rule.required()
     }
   ]
 } 
